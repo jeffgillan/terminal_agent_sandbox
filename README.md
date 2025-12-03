@@ -21,7 +21,7 @@ launch claude in a repo 'claude'
 
 ## Un-sandboxed
 
-[https://code.claude.com/docs/en/sandboxin](Claude Sandboxing)
+(https://code.claude.com/docs/en/sandboxin)[Claude Sandboxing]
 
 [https://code.claude.com/docs/en/settings#sandbox-settings]{Claude Sandboxing Settings}
 
