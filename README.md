@@ -1,7 +1,6 @@
 # terminal_agent_sandbox
 
 
-
 Install claude code:
 
 `curl -fsSL https://claude.ai/install.sh | bash`
@@ -18,6 +17,15 @@ socat - Handles socket communications between the sandbox and Claude Code
 `sudo apt install socat bubblewrap`
 
 launch claude in a repo 'claude'
+
+
+## Un-sandboxed
+
+[https://code.claude.com/docs/en/sandboxing]{Claude Sandboxing}
+
+[https://code.claude.com/docs/en/settings#sandbox-settings]{Claude Sandboxing Settings}
+
+
 
 `/sandbox` 
 
