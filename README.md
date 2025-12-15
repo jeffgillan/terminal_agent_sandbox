@@ -29,9 +29,16 @@ launch claude in a repo `claude'
 
 When you first launch Claude in a repo, it will generate the file `settings.local.json` located at `/<repository>/.claude/settings.local.json`. This appears to be sandboxing for specific repo. 
 
-But we need global sandboxing. You can set enterprise sandbox settings by creating this file `/etc/claude-code/managed-settings.json`. Once set, individual repos have to follow this sandboxing rules. 
 
-For example this `managed-settings.json` will prevent all write access to the system
+### 4 Locations for Sandboxing
+
+1. `/<repository>/.claude/settings.local.json`. This is sandboxing for a specific project directory only. Managed by the user. Git ignored.
+2. `/<repository>/.claude/settings.json - Project settings (shared with team, checked into git)
+3. `~/.claude/settings.json`. Sandboxing for all projects on system
+4. `/etc/claude-code/managed-settings.json`. System Admininstration Sandboxing that rules all other sandboxing.  
+
+
+For example this `managed-settings.json` will prevent all write and edit access to any Community folders in the Cyverse DE. 
 
 ```
 {
@@ -46,8 +53,10 @@ For example this `managed-settings.json` will prevent all write access to the sy
   },
   "permissions": {
     "deny": [
-      "Write(**)",
-      "Edit(**)"
+      "Write(~/data-store/home/shared/**)",
+      "Edit(~/data-store/home/shared/**)",
+      "Write(~/data-store/data/iplant/home/shared/**)",
+      "Edit(~/data-store/data/iplant/home/shared/**)"
     ]
   }
 }
