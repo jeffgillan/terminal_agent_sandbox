@@ -19,21 +19,21 @@ launch claude in a repo `claude'
 
 ## Sandboxing 
 
+Preventing Claude from accessing specific directories, files, tools, or networks. 
+
 [Claude Sandboxing](https://code.claude.com/docs/en/sandboxing)
 
 [Claude Sandboxing Settings](https://code.claude.com/docs/en/settings#sandbox-settings)
 
 
 
-`/sandbox` 
-
-When you first launch Claude in a repo, it will generate the file `settings.local.json` located at `/<repository>/.claude/settings.local.json`. This appears to be sandboxing for specific repo. 
+Typing `/sandbox` while in a Claude Code session will generate the file `settings.local.json` located at `/<repository>/.claude/settings.local.json`. This is sandboxing for specific repo. 
 
 
 ### 4 Locations for Sandboxing
 
 1. `/<repository>/.claude/settings.local.json`. This is sandboxing for a specific project directory only. Managed by the user. Git ignored.
-2. `/<repository>/.claude/settings.json - Project settings (shared with team, checked into git)
+2. `/<repository>/.claude/settings.json` - Project settings (shared with team, checked into git)
 3. `~/.claude/settings.json`. Sandboxing for all projects on system
 4. `/etc/claude-code/managed-settings.json`. System Admininstration Sandboxing that rules all other sandboxing.  
 
