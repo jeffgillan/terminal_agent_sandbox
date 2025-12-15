@@ -19,7 +19,7 @@ launch claude in a repo `claude'
 
 ## Sandboxing 
 
-[Claude Sandboxing](https://code.claude.com/docs/en/sandboxin)
+[Claude Sandboxing](https://code.claude.com/docs/en/sandboxing)
 
 [Claude Sandboxing Settings](https://code.claude.com/docs/en/settings#sandbox-settings)
 
