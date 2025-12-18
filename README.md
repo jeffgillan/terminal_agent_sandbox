@@ -166,6 +166,15 @@ Outer layer (K8s pod): Container isolation + KeyCloak auth + network restriction
 Inner layer (SDK Sandbox): Actual code execution sandbox for AI-generated code 
 
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 ## Install Claude Code
 
